@@ -3,7 +3,7 @@ void main()
 {
   char Name[30][40] = {"James Matthews", "Mary McBeth", "Ying Phakpon","Chai Chanchai", "Yong Boonsith", "Kitti Karndee"};
   int ID[30] = {5301, 5302, 5303, 5304, 5305, 5306};
-  float GPA[30] = {3.73, 2.35, 3.65, 3.24, 1.32, 3.26}; 
+  float GPA[30] = {3.73, 2.35, 3.65, 3.24, 1.32, 3.26};
   int N = 6, i;
   int SearchID, found_index;
 
@@ -24,9 +24,9 @@ void main()
           found_index = i;
 
       if (found_index == -1)
-        printf("Sorry, Student ID %5d not found.\n", SearchID);
+        printf("We apologised for student ID: %5d was not found in our database.\n", SearchID);
       else
-        printf("ID: %5d. Name: %-25s. GPA: %5.2f.\n",
+        printf("Result >>> ID: %5d. Name: %-25s. GPA: %5.2f.\n",
            ID[found_index], Name[found_index],  GPA[found_index]);
 
       printf("Enter Student ID to Search (0 to End): ");
